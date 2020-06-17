@@ -1,0 +1,566 @@
+/*custom fonts*/
+@import url('fonts.css');
+
+/*global css*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.section-pad{
+	padding: 85px 30px;
+}
+.content-wrapper{
+	max-width: 90%;
+	margin: 0 auto;
+}
+.section-title {
+	font-family: Brandon_bld;
+	font-size: 60px;
+	font-weight: 700;
+	color: #222;
+}
+.section-title span {
+	font-family: Brandon_light;
+	font-weight: 300;
+}
+
+/*header css*/
+header{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 111;
+}
+.brand-name{
+	width: 20%;
+	float: left;
+}
+.brand-name img {
+	margin-top: 35px;
+	display: block;
+}
+header nav{
+	width: 80%;
+	float: left;
+}
+header nav ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 35px;
+}
+header nav ul li{
+	display: inline;
+}
+header nav ul li a {
+	font-family: Brandon_med;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 12px;
+	position: relative;
+}
+header nav ul li a:before{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #fff;
+	top:100%;
+	left: 15%;
+	right: 15%;
+	-webkit-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+
+}
+header nav ul li a:hover:before{
+	width:70%;
+}
+
+
+/*home css*/
+.home .home-img{
+	min-height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.home .home-img .overlay{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+.home .home-img .home-content{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	text-align: center;
+	width: 100%;
+}
+.home .home-img .home-content p {
+	font-family: Brandon_light;
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 13px;
+}
+.home .home-img .home-content h1{
+	font-family: Brandon_bld;
+	font-size: 66px;
+	color: #fff;
+	margin-bottom: 55px;
+}
+.home .home-img .home-content a{
+	font-family: Brandon_bld;
+	font-size: 23px;
+	color: #fff;
+	display: inline-block;
+	padding: 13px 66px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+.home .home-img .home-content a:hover{
+	border-radius: 0px 20px 0px 20px;
+}
+
+/*about css*/
+.about{
+	background-color: #fff;
+	overflow: hidden;
+}
+.about .about-text{
+	width: 70%;
+	float: left;
+}
+.about .about-text p {
+	font-family: Brandon_light;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 28px;
+	color: #777;
+	padding-right: 30px;
+}
+.about .about-icon{
+	width: 25%;
+	float: left;
+	margin-left: 5%;
+}
+.about .about-icon img{
+	width: 100%;
+}
+
+/*brand css*/
+.brand{
+	background-color: #fafafa;
+	overflow: hidden;
+}
+.brand .brand-text{
+	width: 60%;
+	float: left;
+}
+.brand .brand-text p {
+	font-family: Brandon_light;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 28px;
+	color: #777;
+	padding-right: 15px;
+}
+.brand .brand-icon{
+	width: 35%;
+	float: left;
+	margin-right: 5%;
+}
+.brand .brand-icon img{
+	width: 100%;
+}
+
+/*services css*/
+#serve{
+	padding-bottom: 55px;
+}
+.service{
+	background-color: #fff;
+	overflow: hidden;
+}
+.service .service-single{
+	width: 46%;
+	float: left;
+	margin-bottom: 45px;
+}
+.service .service-single:nth-child(even){
+	margin-left: 8%;
+}
+.service .service-single .service-icon{
+	width: 20%;
+	float: left;
+}
+.service .service-single .service-icon .icon-box{
+	width: 75px;
+	height: 75px;
+	font-size: 30px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+
+
+}
+.service .service-single .service-text{
+	width: 80%;
+	float: left;
+	margin-left: 0%;
+}
+.service .service-single .service-text h2 {
+	font-family: Brandon_med;
+	font-size: 22px;
+	font-weight: 500;
+	color: #222;
+	margin-bottom: 6px;
+}
+.service .service-single .service-text p{
+	font-family: Brandon_light;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	color: #777;
+}
+
+/*testimonial css*/
+.testimonial{
+	background-color: #fafafa;
+}
+.testimonial .testimonial-title{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.testimonial .testimonial-title p {
+	font-family: Brandon_reg;
+	font-size: 22px;
+	font-weight: 400;
+	color: #777;
+}
+
+.testimonial .testimonial-single{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.testimonial .testimonial-single .testimonial-img{
+	width: 25%;
+	float: left;
+}
+.testimonial .testimonial-single .testimonial-img .testimonial-img-box{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.testimonial .testimonial-single .testimonial-img .testimonial-img-box img{
+	width: 100%;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.testimonial .testimonial-single .testimonial-img .testimonial-img-box img:hover{
+	-webkit-transform: scale(1.3);
+	    -ms-transform: scale(1.3);
+	        transform: scale(1.3);
+}
+.testimonial .testimonial-single .testimonial-text{
+	width: 70%;
+	float: left;
+	margin-left: 5%;
+}
+
+.testimonial .testimonial-single .testimonial-text .testimonial-text-box{
+	width: 100%;
+	background-color: #fff;
+	border:2px solid #f1f1f1;
+	padding: 40px 85px;
+	position: relative;
+
+}
+.testimonial .testimonial-single .testimonial-text .testimonial-text-box::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 52px solid #fff;
+	border-bottom: 25px solid transparent;
+	left: -52px;
+	bottom: 77px;
+}
+.testimonial .testimonial-single .testimonial-text .testimonial-text-box::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 28px solid transparent;
+	border-right: 55px solid #f1f1f1;
+	border-bottom: 28px solid transparent;
+	left: -55px;
+	bottom: 74px;
+}
+.testimonial .testimonial-single .testimonial-text .testimonial-text-box p{
+	font-family: Brandon_reg;
+	font-size: 25px;
+	font-weight: 400;
+	color: #9b9b9b;
+}
+.testimonial .testimonial-single .testimonial-text .testimonial-text-box span{
+	font-family: Brandon_reg;
+	font-size: 18px;
+	font-weight: 400;
+	color: #7690c5;
+	line-height: 50px;
+}
+
+.testimonial .testimonial-second{
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+}
+.testimonial .testimonial-second .testimonial-text p{
+	-webkit-transform: rotateY(-180deg);
+	        transform: rotateY(-180deg);
+}
+.testimonial .testimonial-second .testimonial-text span{
+	-webkit-transform: rotateY(-180deg);
+	        transform: rotateY(-180deg);
+	display: block;
+}
+
+/*clients css*/
+
+.clients{
+	background-color: #fff;
+}
+.clients .clients-content{
+	width: 100%;
+	text-align: center;
+}
+.clients .clients-content ul{
+	list-style-type: none;
+}
+.clients .clients-content ul li{
+	display: inline-block;
+	margin-right: 48px;
+}
+.clients .clients-content ul li:last-child{
+	margin-right: 0;
+}
+
+/*team css*/
+.team{
+	background-color: #111;
+}
+.team .team-title{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.team .team-title h1{
+	color:#fff;
+}
+.team .team-title p{
+font-family: Brandon_reg;
+font-size: 22px;
+font-weight: 400;
+color: #777;
+}
+.team .team-content{
+	width: 100%;
+	overflow: hidden;
+
+}
+.team .team-tag{
+	text-align: center;
+	margin-top: 45px;
+}
+.team .team-tag p{
+	font-family: Brandon_reg;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	padding: 0 200px;
+}
+.team .team-content .team-single{
+	width: 33.33%;
+	float: left;
+	text-align: center; 
+}
+.team .team-content .team-single .img{
+	height: 230px;
+	width: 230px;
+	overflow: hidden;
+	margin: auto;
+	border:2px solid #fff;
+	border-radius: 50%;
+}
+.team .team-content .team-single .img img{
+	width: 100%;
+	display: block;
+	-webkit-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.team .team-content .team-single .img img:hover{
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+.team .team-content .team-single .team-text{
+	padding: 10px 0 12px;
+}
+.team .team-content .team-single .team-text .name {
+	font-family: Brandon_bld;
+	font-size: 18px;
+	color: #fff;
+	margin: 8px 0 3px;
+}
+.team .team-content .team-single .team-text .designation {
+	font-family: Brandon_light;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 300;
+	display: inline-block;
+	margin-bottom: 6px;
+}
+.team .team-content .team-single .team-text ul{
+	list-style-type: none;
+}
+.team .team-content .team-single .team-text ul li{
+	display: inline;
+}
+.team .team-content .team-single .team-text ul li a{
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border: 3px solid #fff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	-webkit-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.team .team-content .team-single .team-text ul li a:hover{
+	-webkit-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+
+/*contact css*/
+.contact{
+	overflow: hidden;
+	background-color: #7690c5;
+}
+.contact .address{
+	width: 48%;
+	float: left;
+}
+.contact .address h1{
+	color: #fff;
+}
+.contact .address p{
+	font-family: Brandon_reg;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+}
+.contact .address table{
+	width: 100%;
+	font-family: Brandon_reg;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 30px;
+}
+.contact .address table .fa{
+	font-size: 50px;
+}
+.contact .address tr,td{
+	padding-top: 40px;
+}
+.contact .contact-form{
+	width: 48%;
+	float: left;
+	margin-left: 4%;
+}
+.contact .contact-form .form-control{
+	width: 100%;
+	font-family: Brandon_reg;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 25px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+}
+.contact .contact-form button{
+	font-family: Brandon_reg;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 20px;
+	padding: 4px 60px;
+	outline: none;
+	border:2px solid #fff;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 4px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.contact .contact-form button:hover{
+	border-radius: 0 20px 0 20px;
+}
+
+/*footer css*/
+footer{
+	background-color: #7690c5;
+}
+footer .footer-content{
+	text-align: center;
+	border-top: 1px solid #87a0d2;
+}
+footer .footer-content p{
+	font-family: Brandon_med;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+	padding: 30px 0; 
+}
+

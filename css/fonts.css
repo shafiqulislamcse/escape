@@ -1,0 +1,24 @@
+@font-face{
+	src:url('../webfonts/brandon/Brandon_light.otf');
+	font-family: Brandon_light;
+}
+
+@font-face{
+	src:url('../webfonts/brandon/Brandon_reg.otf');
+	font-family: Brandon_reg;
+}
+
+@font-face{
+	src:url('../webfonts/brandon/Brandon_med.otf');
+	font-family: Brandon_med;
+}
+
+@font-face{
+	src:url('../webfonts/brandon/Brandon_bld.otf');
+	font-family: Brandon_bld;
+}
+
+@font-face{
+	src:url('../webfonts/brandon/Cubano-Regular.otf');
+	font-family: Cubano-Regular;
+}
